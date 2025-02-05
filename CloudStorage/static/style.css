@@ -1,0 +1,193 @@
+/* General Styles (Shared) */
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Width adjusted for better responsiveness */
+    width: clamp(300px, 400px, 90%); /* Min, preferred, max width */
+    max-width: 400px; /* Limit max width on larger screens */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.alert { /* Styles for flash messages */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+
+/* Login Page Specific Styles */
+.login-container { /* Apply to login page container */
+    width: 350px; /* Fixed width for login */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    height: 40px;
+    line-height: 40px;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.login-container .signup {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.login-container .signup span {
+    color: #777;
+    margin-right: 5px;
+}
+
+
+/* Register Page Specific Styles */
+.register-container { /* Apply to register page container */
+    /* Styles for register page are largely the same as the general container,
+       but you can add specific styles here if needed */
+}
+
+.register-container .input-group {
+    margin-bottom: 20px;
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="tel"],
+.register-container input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+}
+
+.register-container .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.register-container .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-container .signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Index Page Specific Styles */
+.index-container { /* Apply to index page container */
+    /* Styles for index page are largely the same as the general container,
+       but you can add specific styles here if needed */
+}
+
+.index-container h2 {
+    margin-top: 20px;
+}
+
+.index-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-container li {
+    margin-bottom: 5px;
+}
+
+.index-container li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.index-container li a:hover {
+    text-decoration: underline;
+}
